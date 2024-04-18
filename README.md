@@ -75,5 +75,10 @@ m = m_vals(am, bm)
 n = n_vals(an, bn)
 h = h_vals(ah, bh)
 
-#Input alpha, beta and n,m,h values
-#input the potential data and external current
+#We need the rest potential for the axon to start with (-65 mV).
+#Define initial values for n, m and h using our rest potential.
+#We need to define the external current Iext which depends on time. 
+#Time can be defines using linspace(0, 50, N), 0 to 50 milliseconds with N points.
+#We need V, m, n, and h values. which we can use from scipy library 'odeint'.
+#We need odeint to integrate the four diff eqs.
+#edit the code if you want
